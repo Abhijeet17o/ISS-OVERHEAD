@@ -47,7 +47,7 @@ def currSky() -> bool:
     return False
 
 if issOverhead() and currSky():
-    with smtplib.SMPT(HOST, port=587) as connection:
+    with smtplib.SMTP(HOST, port=587) as connection:
         connection.starttls() #Secures the connection
         connection.login(user=MY_EMAIL, password=PASSWORD)
         #Send mail
