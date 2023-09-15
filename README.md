@@ -3,13 +3,15 @@
 The code is able to get the current coordinates of ISS, then it tallys your provided coordinates and of ISS. It checks in range of ±5 with your provided latitude and longitude coordinate AND if it is curretly night in your loction then it sends a mail to your email address. Saying LOOK UP!<br><br>
 **How to use:**<br>
 <pre>
-There are THREE things you need to do to use this app:<br>
-1. Set your correct email address<br>
-2. For password you cannot use your normal password.<br>
+There are FOUR things you need to do to use this app:<br>
+1. Find your email provider's SMTP HOST NAME, for gmail it is "smtp.gmail.com"
+2. Set your correct email address<br>
+3. For password you cannot use your normal password.<br>
     - Go to your email setting and turn on 2 step verification.<br>
     - Find app password select "other".<br>
     - Then it will generate a special app password. Use that.<br>
-3.Find your current latitude and longitude coordinates<br>
+4. Find your current latitude and longitude coordinates<br>
+
 THAT'S IT NOW THE CODE SHOULD WORK!</pre>
 
 
