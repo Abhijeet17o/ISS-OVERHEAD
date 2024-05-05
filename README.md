@@ -17,7 +17,7 @@ Before running the script, you'll need to provide some configuration details and
    - `HOST`: SMTP host for your email provider (e.g., "smtp.gmail.com").
    - `MY_EMAIL`: Your email address.
    - `PASSWORD`: Your email account password (you may need to generate an app password for this).
-   - `MY_LAT` and `MY_LONG`: Your latitude and longitude coordinates.
+   - `MY_LAT` and `MY_LONG`: Your latitude and longitude coordinates. (you can find your coordinates using this website: `https://www.latlong.net/`)
 
 ## Usage
 
