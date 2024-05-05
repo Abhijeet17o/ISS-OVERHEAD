@@ -1,20 +1,53 @@
-# LOOK UP! (ISS OVERHEAD APP)
-**Discription:**<br>
-The code is able to get the current coordinates of ISS, then it tallys your provided coordinates and of ISS. It checks in range of ±5 with your provided latitude and longitude coordinate AND if it is curretly night in your loction then it sends a mail to your email address. Saying LOOK UP!<br><br>
-**How to use:**<br>
-<pre>
-There are FOUR things you need to do to use this app:<br>
-1. Find your email provider's SMTP HOST NAME, for gmail it is "smtp.gmail.com"
-2. Set your correct email address<br>
-3. For password you cannot use your normal password.<br>
-    - Go to your email setting and turn on 2 step verification.<br>
-    - Find app password select "other".<br>
-    - Then it will generate a special app password. Use that.<br>
-4. Find your current latitude and longitude coordinates<br>
+# ISS Tracker and Sky Notification System
 
-THAT'S IT NOW THE CODE SHOULD WORK!</pre>
+This Python script tracks the International Space Station (ISS) and notifies the user via email if the ISS is overhead and the sky is dark enough for observation. It utilizes two APIs: one to track the current position of the ISS and another to determine sunrise and sunset times at the user's location.
 
+## Getting Started
 
+Before running the script, you'll need to provide some configuration details and dependencies.
 
-**Author: Abhijeet Sapar**<br>
-**Inspiration: [100 Days of code, day 33](https://www.udemy.com/course/100-days-of-code/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Python_v.PROF_la.EN_cc.INDIA_ti.7380_Exp&utm_content=deal4584&utm_term=_._ag_78980845866_._ad_533093955834_._kw__._de_c_._dm__._pl__._ti_dsa-774930046209_._li_9301326_._pd__._&matchtype=&gclid=CjwKCAjwgZCoBhBnEiwAz35RwgeOt35zeF-Wy2kWKqVRmaQ_sBGW1HCKCFTPtzsTXjgeGWubs0ae-xoCjf0QAvD_BwE)**
+### Dependencies
+
+- `requests`: Install using `pip install requests`.
+- `convert24.py`: A module that converts time from 12-hour format to 24-hour format. Ensure you have this file in the same directory as the script.
+
+### Configuration
+
+1. Update the following variables with your own values:
+   - `HOST`: SMTP host for your email provider (e.g., "smtp.gmail.com").
+   - `MY_EMAIL`: Your email address.
+   - `PASSWORD`: Your email account password (you may need to generate an app password for this).
+   - `MY_LAT` and `MY_LONG`: Your latitude and longitude coordinates.
+
+## Usage
+
+1. Run the script:
+
+   ```bash
+   python iss_tracker.py
+   ```
+
+2. The script will check if the ISS is overhead and if the sky is dark enough for observation.
+3. If both conditions are met, it will send an email notification to your specified email address.
+4. Check your email inbox for the notification.
+
+## Features
+
+- Tracks the current position of the International Space Station (ISS).
+- Determines if the ISS is overhead within a certain range of latitude and longitude.
+- Determines if the sky is dark enough for observation based on sunrise and sunset times at the user's location.
+- Sends an email notification if both conditions are met.
+
+## Project Structure
+
+- `iss_tracker.py`: Main Python script containing the implementation of the ISS tracker and sky notification system.
+- `convert24.py`: Module for converting time from 12-hour format to 24-hour format. You can find it in the repository.
+- `README.md`: Markdown file containing information about the script and how to use it.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions, enhancements, or bug fixes, feel free to open an issue or create a pull request.
+
+## Contact
+
+For any inquiries or support, please contact [abhijeetsapar17@gmail.com].
